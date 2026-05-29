@@ -1,86 +1,82 @@
-# 🛡️ RedTeam Labs – Offensive Operations Portfolio
-**A curated collection of offensive security exercises focused on initial access, lateral movement, privilege escalation, and full-chain attack simulations.**
+# RedTeam-labs
 
-## 🎯 Purpose  
-This repository documents my hands‑on Red Team practice across multiple lab environments, capturing realistic attack paths, adversary tradecraft, and repeatable methodologies aligned with modern offensive security standards.
+Personal repository documenting my offensive security learning path — writeups, methodology notes, and tooling references built up as I progress toward red team operations.
 
-## 📁 Repository Structure  
+This repo is actively growing. No fluff, no filler — only content I've actually worked through.
 
-````code
+---
+
+## Certifications
+
+| Cert | Issuer | Status |
+|------|--------|--------|
+| CompTIA Security+ | CompTIA | ✅ Verified |
+| CompTIA PenTest+ | CompTIA | ✅ Verified |
+| eJPT | INE / eLearnSecurity | 🔄 In progress |
+
+---
+
+## Repository Structure
+
+```
 RedTeam-labs/
-│
-├── Initial-Access/
-│   ├── phishing-simulation/
-│   ├── web-initial-footholds/
-│   └── misconfigurations/
-│
-├── Lateral-Movement/
-│   ├── smb-relay/
-│   ├── kerberos-attacks/
-│   └── remote-execution/
-│
-├── Privilege-Escalation/
-│   ├── windows/
-│   └── linux/
-│
-├── Full-Chain-Attacks/
-│   ├── lab-01/
-│   ├── lab-02/
-│   └── lab-03/
-│
-└── Tools-and-Scripts/
-├── powershell/
-├── bash/
-└── python/
-````
+├── writeups/
+│   ├── tryhackme/
+│   └── hackthebox/
+├── methodology/
+│   └── pentest-checklist.md
+└── README.md
+```
 
-## 🧩 Methodology  
-Each lab follows a consistent, professional structure:
+---
 
-1. **Scenario Overview**  
-   Environment description, objectives, and threat model.
+## Writeups
 
-2. **Recon & Enumeration**  
-   Network mapping, service discovery, OSINT, and internal recon.
+Machines documented with full methodology: recon → exploitation → post-exploitation → lessons learned.
 
-3. **Initial Access**  
-   Exploitation path, payloads, phishing, or misconfigurations.
+### TryHackMe
 
-4. **Privilege Escalation**  
-   Local enumeration, kernel exploits, misconfigurations, token abuse, etc.
+| Machine | OS | Difficulty | Writeup |
+|---------|----|------------|---------|
+| *(first writeup coming this week)* | — | — | — |
 
-5. **Lateral Movement**  
-   Credential harvesting, pivoting, Kerberos abuse, remote execution.
+### HackTheBox
 
-6. **Persistence & Evasion**  
-   Techniques aligned with MITRE ATT&CK.
+| Machine | OS | Difficulty | Writeup |
+|---------|----|------------|---------|
+| *(first writeup coming this week)* | — | — | — |
 
-7. **Impact & Objectives**  
-   Data access, domain compromise, or mission completion.
+---
 
-8. **Detection Opportunities**  
-   Blue Team visibility and defensive notes.
+## Methodology
 
-9. **Remediation**  
-   Hardening recommendations.
+Notes on pentesting workflow built from practice, not theory.
 
-## 🧰 Tools & Techniques  
-This repository includes practical use of:
+- **Recon:** nmap, gobuster, ffuf, whatweb
+- **Web attacks:** SQLi, file upload, path traversal, XSS — labs via PortSwigger
+- **Post-exploitation:** sudo misconfigs, SUID, cron jobs, writable paths
+- **References:** [HackTricks](https://book.hacktricks.xyz) · [GTFOBins](https://gtfobins.github.io) · [RevShells](https://www.revshells.com)
 
-- **C2 frameworks:** Sliver, Mythic, Havoc  
-- **Credential attacks:** Mimikatz, Rubeus, Impacket  
-- **Lateral movement:** PsExec, WinRM, WMI, SMB  
-- **Privilege escalation:** WinPEAS, LinPEAS, custom scripts  
-- **Payload development:** PowerShell, Python, Bash  
-- **Enumeration:** BloodHound, SharpHound, CrackMapExec  
+---
 
-## 🧪 Featured Labs (coming soon)  
-These will be the first fully documented labs:
+## Current Focus
 
-- **Lab 01 — Initial Access via Web Exploitation**  
-- **Lab 02 — Lateral Movement with Kerberoasting**  
-- **Lab 03 — Full Domain Compromise via Misconfigured AD CS**  
+Working through the eJPT certification track using:
 
-## 📌 Notes  
-This repository is continuously updated as I progress through new Red Team labs and simulations.  
-All content is for **educational and ethical purposes only**.
+- [TryHackMe](https://tryhackme.com/p/xXbanditXx) — free rooms: Nmap, Network Services, Metasploit, Vulnversity, Blue
+- [HackTheBox Starting Point](https://app.hackthebox.com/users/2476444) — Tier 0 → Tier 2
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — SQL injection, file upload, path traversal
+
+Timeline: eJPT exam target — end of July 2026.
+
+---
+
+## Profiles
+
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-xXbanditXx-red?style=flat-square&logo=tryhackme)](https://tryhackme.com/p/xXbanditXx)
+[![HackTheBox](https://img.shields.io/badge/HackTheBox-profile-9fef00?style=flat-square&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/users/2476444)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gabriel%20Barbacil-0077b5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/gabrielbarbacil/)
+
+---
+
+*Last updated: May 2026*
